@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    background: url("Background.png") center center/cover no-repeat;
-    filter:brightness(80%);
+    background: #EEEEEE;
     font-family: Arial;
 }
 header{
-    background: #333333;
+    background: url("Background.png") center center/cover no-repeat;
+    filter:brightness(80%);
     padding: 20px;
     color: white;
     text-align: center;
@@ -68,6 +68,7 @@ nav h1 {
     background-color: none;
     background: none;
 }
+
 
 
 
