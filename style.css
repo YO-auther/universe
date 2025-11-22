@@ -13,7 +13,7 @@ header{
 }
 
 main {
-    background: url("Background.png") center/cover no repeat;
+    background: url("Background.png") center/cover no-repeat;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -61,12 +61,13 @@ nav h1:hover {
     color: rgb(25, 0, 255);
     text-shadow: 0 0 5px #aaa;
 }
-nav a:focus
+nav a:focus,
 nav h1 {
     outline: none;
     background-color: none;
     background: none;
 }
+
 
 
 
