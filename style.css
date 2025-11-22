@@ -10,7 +10,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.2); /* затемнение на 20% */
+    background: rgba(0, 0, 0, 0.2);
     pointer-events: none;
     z-index: -1;
 }
@@ -78,6 +78,12 @@ nav h1 {
     outline: none;
     background-color: none;
     background: none;
+}
+
+table {
+    background:#D8BFD8;
+    text-align: left;
+    text-cover: white;
 }
 
 
