@@ -79,12 +79,20 @@ nav h1 {
     background-color: none;
     background: none;
 }
-
 table {
-    background:#D8BFD8;
-    text-align: left;
-    text-cover: white;
+  border-collapse: collapse;
+  width: 100%;
 }
+td {
+  border: 1px solid #333;
+  padding: 8px;
+  background-color: #4fc3f7;
+}
+th {
+  background-color: #29b6f6;
+}
+
+
 
 
 
