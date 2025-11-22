@@ -13,7 +13,7 @@ header{
 }
 
 main {
-    background-image: url("Background.png") center/cover no repeat;
+    background: url("Background.png") center/cover no repeat;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -67,5 +67,6 @@ nav h1 {
     background-color: none;
     background: none;
 }
+
 
 
