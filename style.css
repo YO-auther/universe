@@ -60,7 +60,7 @@ main img {
 }
 
 nav h1{
-    color: rgb(0, 0, 0);
+    color: none;
     text-align: left;
     padding: 18px;
     display: inline-block;
@@ -91,6 +91,7 @@ td {
 th {
   background-color: #c8c8ff;
 }
+
 
 
 
