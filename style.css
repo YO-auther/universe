@@ -69,7 +69,7 @@ nav h1{
 }
 
 nav h1:hover {
-    background-color: #ffffff;
+    background: none;
     color: rgb(25, 0, 255);
     text-shadow: 0 0 5px #aaa;
 }
@@ -91,6 +91,7 @@ td {
 th {
   background-color: #c8c8ff;
 }
+
 
 
 
