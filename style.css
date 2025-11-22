@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    background: #EEEEEE;
+    background: url("Background.png") center center/cover no-repeat;
+    filter:brightness(80%);
     font-family: Arial;
 }
-
 header{
     background: #333333;
     padding: 20px;
@@ -68,6 +68,7 @@ nav h1 {
     background-color: none;
     background: none;
 }
+
 
 
 
