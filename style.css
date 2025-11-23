@@ -87,10 +87,13 @@ td {
   border: 1px solid #333;
   padding: 8px;
   background-color: #c6c6f0;
+  text-color: black;
 }
 th {
   background-color: #c8c8ff;
+  text-color: white;
 }
+
 
 
 
