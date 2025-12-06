@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
-.diary-text {
+/* Аккуратный дневниковый */
+.hand-normal {
+  font-family: "Patrick Hand", cursive;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Пляшущий, эмоциональный */
+.hand-chaotic {
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   line-height: 1.6;
-  white-space: pre-wrap; 
-
 }
 
-.schoolbell-regular {
+/* Детский, простой */
+.hand-kid {
   font-family: "Schoolbell", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
 }
-
 
 body {
     margin: 0;
@@ -111,4 +119,5 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
