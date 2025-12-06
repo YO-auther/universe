@@ -5,4 +5,32 @@
   font-size: 20px;
   line-height: 1.6;
   white-space: pre-wrap; /* сохраняет переносы записей */
+
 }
+
+body {
+    margin: 0;
+    background: url("Background2.png") center center/cover no-repeat;
+    font-family: Arial;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: -1;
+}
+
+header{
+    background: #333333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+main {
