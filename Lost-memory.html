@@ -6,14 +6,30 @@
 <style>
   body {
     background: #f2f2f2;
-    text-align: left;
     margin-top: 100px;
+    font-family: sans-serif;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрируем текст */
+  }
+
+  .back {
+    align-self: flex-start; /* "назад" слева */
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+  }
+
   .error {
     font-size: 60px;
     margin-bottom: 10px;
     text-align: center;
   }
+
   .msg {
     font-size: 22px;
     text-align: center;
@@ -21,9 +37,13 @@
 </style>
 </head>
 <body>
-  <a href="souls.html"><h4>назад</h4></a>
-  <div class="error">404</div>
-  <div class="msg">История не найдена...  
-  <br>возможно, персонаж не помнит своё прошлое.</div>
+  <div class="container">
+    <a href="souls.html" class="back">назад</a>
+    <div class="error">404</div>
+    <div class="msg">
+      История не найдена...<br>
+      возможно, персонаж не помнит своё прошлое.
+    </div>
+  </div>
 </body>
 </html>
