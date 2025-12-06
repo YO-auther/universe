@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.diary-text {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  line-height: 1.6;
+  white-space: pre-wrap; /* сохраняет переносы записей */
+}
