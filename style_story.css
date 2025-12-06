@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-/* Аккуратный почерк */
 .hand-normal {
   font-family: "Marck Script", cursive;
 }
 
-/* Пляшущий почерк */
 .hand-chaotic {
-  font-family: "Neucha", cursive;
+  font-family: "Bad Script", cursive;
 }
 
-/* Детский почерк */
 .hand-kid {
   font-family: "Caveat", cursive;
 }
@@ -113,6 +110,7 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
 
 
