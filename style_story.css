@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Schoolbell&display=swap');
 
 .hand-normal {
   font-family: "Marck Script", cursive;
@@ -11,7 +11,7 @@
 }
 
 .hand-kid {
-  font-family: "Pangolin", cursive;
+  font-family: "Schoolbell", cursive;
 }
 
 body {
@@ -110,6 +110,7 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
 
 
