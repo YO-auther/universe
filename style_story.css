@@ -1,26 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
-/* Аккуратный дневниковый */
+/* Аккуратный почерк */
 .hand-normal {
-  font-family: "Patrick Hand", cursive;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: "Marck Script", cursive;
 }
 
-/* Пляшущий, эмоциональный */
+/* Пляшущий почерк */
 .hand-chaotic {
-  font-family: "Indie Flower", cursive;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: "Neucha", cursive;
 }
 
-/* Детский, простой */
+/* Детский почерк */
 .hand-kid {
-  font-family: "Schoolbell", cursive;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: "Caveat", cursive;
 }
 
 body {
@@ -119,5 +113,6 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
 
