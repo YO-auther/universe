@@ -4,9 +4,16 @@
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   line-height: 1.6;
-  white-space: pre-wrap; /* сохраняет переносы записей */
+  white-space: pre-wrap; 
 
 }
+
+.schoolbell-regular {
+  font-family: "Schoolbell", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
     margin: 0;
@@ -104,3 +111,4 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
