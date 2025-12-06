@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Schoolbell&display=swap');
 
 .hand-normal {
   font-family: "Marck Script", cursive;
@@ -10,9 +9,14 @@
   font-family: "Bad Script", cursive;
 }
 
-.hand-kid {
-  font-family: "Schoolbell", cursive;
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+/* Пример использования */
+body {
+    font-family: "Schoolbell", cursive;
 }
+
 
 body {
     margin: 0;
@@ -110,6 +114,7 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
 
 
