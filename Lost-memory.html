@@ -42,7 +42,17 @@
     <div class="error">404</div>
     <div class="msg">
       История не найдена...<br>
-      возможно, персонаж не помнит своё прошлое.
+      <p>возможно, персонаж не помнит своего
+  <span id="secretArchive" style="cursor: text; user-select: text;">
+    прошлого.
+  </span>.
+</p>
+
+<script>
+  document.getElementById("secretArchive").addEventListener("click", () => {
+    window.location.href = "archive/amelia.html";
+  });
+</script>
     </div>
   </div>
 </body>
