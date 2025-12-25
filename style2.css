@@ -95,6 +95,15 @@ th {
   color: white;
 }
 
+.voice {
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: #777;
+  text-shadow: 0 0 4px rgba(255,255,255,0.2);
+}
+
+
+
 
 
 
