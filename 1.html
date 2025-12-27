@@ -28,31 +28,54 @@
 </div>
 <script>
 let utterance;
+let voicesLoaded = false;
 
-function startReading() {
-  const text = document.getElementById("story").innerText;
+function loadVoices() {
+  return new Promise(resolve => {
+    let voices = speechSynthesis.getVoices();
+    if (voices.length) {
+      resolve(voices);
+    } else {
+      speechSynthesis.onvoiceschanged = () => {
+        resolve(speechSynthesis.getVoices());
+      };
+    }
+  });
+}
 
-  if (speechSynthesis.speaking) {
+async function startReading() {
+  const story = document.getElementById("story");
+  if (!story) {
+    alert("Блок story не найден");
+    return;
+  }
+
+  if (speechSynthesis.paused) {
     speechSynthesis.resume();
     return;
   }
 
+  if (speechSynthesis.speaking) return;
+
+  const text = story.innerText.trim();
+  if (!text) return;
+
+  const voices = await loadVoices();
+  const ruVoice = voices.find(v => v.lang.startsWith("ru"));
+
   utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "ru-RU";
-  utterance.rate = 1;   // скорость (0.5 – 2)
-  utterance.pitch = 1;  // тон
-  utterance.volume = 1; // громкость
+  utterance.rate = 1;
+  utterance.pitch = 1;
+  utterance.volume = 1;
 
-  // Выбор русского голоса (если есть)
-  const voices = speechSynthesis.getVoices();
-  const ruVoice = voices.find(v => v.lang.startsWith("ru"));
   if (ruVoice) utterance.voice = ruVoice;
 
   speechSynthesis.speak(utterance);
 }
 
 function pauseReading() {
-  if (speechSynthesis.speaking) {
+  if (speechSynthesis.speaking && !speechSynthesis.paused) {
     speechSynthesis.pause();
   }
 }
@@ -61,6 +84,7 @@ function stopReading() {
   speechSynthesis.cancel();
 }
 </script>
+
 
 
 <article id="story">
@@ -347,6 +371,7 @@ function stopReading() {
 
 </p></section>
 </article>
+
 
 
 
