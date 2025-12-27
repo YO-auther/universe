@@ -21,9 +21,54 @@
     <a href="#3">"Поиск"</a>
     <a href="#4">"Вперед"</a>
 </nav>
+<div class="tts-controls">
+  <button onclick="startReading()">▶ Читать</button>
+  <button onclick="pauseReading()">⏸ Пауза</button>
+  <button onclick="stopReading()">⏹ Стоп</button>
+</div>
+
+<article id="story">
+  <p>Здесь начинается длинный текст истории...</p>
+  <p>Очень длинный. Очень.</p>
+</article>
+<script>
+let utterance;
+
+function startReading() {
+  const text = document.getElementById("story").innerText;
+
+  if (speechSynthesis.speaking) {
+    speechSynthesis.resume();
+    return;
+  }
+
+  utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "ru-RU";
+  utterance.rate = 1;   // скорость (0.5 – 2)
+  utterance.pitch = 1;  // тон
+  utterance.volume = 1; // громкость
+
+  // Выбор русского голоса (если есть)
+  const voices = speechSynthesis.getVoices();
+  const ruVoice = voices.find(v => v.lang.startsWith("ru"));
+  if (ruVoice) utterance.voice = ruVoice;
+
+  speechSynthesis.speak(utterance);
+}
+
+function pauseReading() {
+  if (speechSynthesis.speaking) {
+    speechSynthesis.pause();
+  }
+}
+
+function stopReading() {
+  speechSynthesis.cancel();
+}
+</script>
 
 
-
+<section id="story">
 <section id="1">
 <h2>Часть 1.«Уход»</h2>
 <p>Комната была полна тихого дыхания спящих. </p>
@@ -306,6 +351,7 @@
 Она сделала шаг к мерцающему порталу, не оставляя им выбора. Выбора не было. Путь был только один — вперёд, в неизвестность, туда, где их уже ждали трое.</p>
 
 </p></section>
+</section>
 
 
 
