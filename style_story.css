@@ -16,7 +16,6 @@
 
 body {
     margin: 0;
-    background: url("Background3.png") center center/cover no-repeat;
     font-family: Arial;
     min-height: 100vh;
     position: relative;
@@ -110,6 +109,7 @@ th {
   background-color: #c8c8ff;
   color: white;
 }
+
 
 
 
